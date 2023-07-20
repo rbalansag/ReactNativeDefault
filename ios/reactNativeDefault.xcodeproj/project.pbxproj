@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* Auth0SamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* Auth0SamplesTests.m */; };
+		00E356F31AD99517003FC87E /* reactNativeDefaultTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* reactNativeDefaultTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -15,9 +15,9 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* Auth0SamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* Auth0SamplesTests.m */; };
-		35FF2DFB666D3A64BE500666 /* libPods-Auth0Samples.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F009A8E0FE990815B42B17 /* libPods-Auth0Samples.a */; };
-		74EBC5C5FC1F96E8AD6333B3 /* libPods-Auth0Samples-Auth0SamplesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D2CD82003B89DD883470BF /* libPods-Auth0Samples-Auth0SamplesTests.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* reactNativeDefaultTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* reactNativeDefaultTests.m */; };
+		35FF2DFB666D3A64BE500666 /* libPods-reactNativeDefault.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F009A8E0FE990815B42B17 /* libPods-reactNativeDefault.a */; };
+		74EBC5C5FC1F96E8AD6333B3 /* libPods-reactNativeDefault-reactNativeDefaultTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D2CD82003B89DD883470BF /* libPods-reactNativeDefault-reactNativeDefaultTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,42 +26,42 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = Auth0Samples;
+			remoteInfo = reactNativeDefault;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "Auth0Samples-tvOS";
+			remoteInfo = "reactNativeDefault-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* Auth0SamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Auth0SamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* reactNativeDefaultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reactNativeDefaultTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* Auth0SamplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Auth0SamplesTests.m; sourceTree = "<group>"; };
-		0A55395C888295B28595EDF1 /* Pods-Auth0Samples-Auth0SamplesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auth0Samples-Auth0SamplesTests.debug.xcconfig"; path = "Target Support Files/Pods-Auth0Samples-Auth0SamplesTests/Pods-Auth0Samples-Auth0SamplesTests.debug.xcconfig"; sourceTree = "<group>"; };
-		0B23DF90021AAE5E781BDBDE /* Pods-Auth0Samples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auth0Samples.release.xcconfig"; path = "Target Support Files/Pods-Auth0Samples/Pods-Auth0Samples.release.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* Auth0Samples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auth0Samples.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Auth0Samples/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Auth0Samples/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* reactNativeDefaultTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reactNativeDefaultTests.m; sourceTree = "<group>"; };
+		0A55395C888295B28595EDF1 /* Pods-reactNativeDefault-reactNativeDefaultTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeDefault-reactNativeDefaultTests.debug.xcconfig"; path = "Target Support Files/Pods-reactNativeDefault-reactNativeDefaultTests/Pods-reactNativeDefault-reactNativeDefaultTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0B23DF90021AAE5E781BDBDE /* Pods-reactNativeDefault.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeDefault.release.xcconfig"; path = "Target Support Files/Pods-reactNativeDefault/Pods-reactNativeDefault.release.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* reactNativeDefault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reactNativeDefault.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = reactNativeDefault/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = reactNativeDefault/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Auth0Samples/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Auth0Samples/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Auth0Samples/main.m; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* Auth0Samples-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Auth0Samples-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* Auth0Samples-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Auth0Samples-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		40F009A8E0FE990815B42B17 /* libPods-Auth0Samples.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Auth0Samples.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F6DE0318D4F3833C56F2B19 /* Pods-Auth0Samples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auth0Samples.debug.xcconfig"; path = "Target Support Files/Pods-Auth0Samples/Pods-Auth0Samples.debug.xcconfig"; sourceTree = "<group>"; };
-		66D2CD82003B89DD883470BF /* libPods-Auth0Samples-Auth0SamplesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Auth0Samples-Auth0SamplesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81B37E689B56A34ED9688334 /* Pods-Auth0SamplesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auth0SamplesTests.debug.xcconfig"; path = "Target Support Files/Pods-Auth0SamplesTests/Pods-Auth0SamplesTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CD945658248EE64B004E1DC2 /* Auth0Samples-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Auth0Samples-Bridging-Header.h"; sourceTree = "<group>"; };
-		DD4F3E0930AF58F7A3EC2909 /* Pods-Auth0SamplesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auth0SamplesTests.release.xcconfig"; path = "Target Support Files/Pods-Auth0SamplesTests/Pods-Auth0SamplesTests.release.xcconfig"; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = reactNativeDefault/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = reactNativeDefault/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = reactNativeDefault/main.m; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* reactNativeDefault-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "reactNativeDefault-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* reactNativeDefault-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "reactNativeDefault-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40F009A8E0FE990815B42B17 /* libPods-reactNativeDefault.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeDefault.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F6DE0318D4F3833C56F2B19 /* Pods-reactNativeDefault.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeDefault.debug.xcconfig"; path = "Target Support Files/Pods-reactNativeDefault/Pods-reactNativeDefault.debug.xcconfig"; sourceTree = "<group>"; };
+		66D2CD82003B89DD883470BF /* libPods-reactNativeDefault-reactNativeDefaultTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeDefault-reactNativeDefaultTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81B37E689B56A34ED9688334 /* Pods-reactNativeDefaultTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeDefaultTests.debug.xcconfig"; path = "Target Support Files/Pods-reactNativeDefaultTests/Pods-reactNativeDefaultTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD945658248EE64B004E1DC2 /* reactNativeDefault-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "reactNativeDefault-Bridging-Header.h"; sourceTree = "<group>"; };
+		DD4F3E0930AF58F7A3EC2909 /* Pods-reactNativeDefaultTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeDefaultTests.release.xcconfig"; path = "Target Support Files/Pods-reactNativeDefaultTests/Pods-reactNativeDefaultTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F8BC8EB960269CD14E6E92B5 /* Pods-Auth0Samples-Auth0SamplesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auth0Samples-Auth0SamplesTests.release.xcconfig"; path = "Target Support Files/Pods-Auth0Samples-Auth0SamplesTests/Pods-Auth0Samples-Auth0SamplesTests.release.xcconfig"; sourceTree = "<group>"; };
+		F8BC8EB960269CD14E6E92B5 /* Pods-reactNativeDefault-reactNativeDefaultTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeDefault-reactNativeDefaultTests.release.xcconfig"; path = "Target Support Files/Pods-reactNativeDefault-reactNativeDefaultTests/Pods-reactNativeDefault-reactNativeDefaultTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74EBC5C5FC1F96E8AD6333B3 /* libPods-Auth0Samples-Auth0SamplesTests.a in Frameworks */,
+				74EBC5C5FC1F96E8AD6333B3 /* libPods-reactNativeDefault-reactNativeDefaultTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35FF2DFB666D3A64BE500666 /* libPods-Auth0Samples.a in Frameworks */,
+				35FF2DFB666D3A64BE500666 /* libPods-reactNativeDefault.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,13 +98,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* Auth0SamplesTests */ = {
+		00E356EF1AD99517003FC87E /* reactNativeDefaultTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* Auth0SamplesTests.m */,
+				00E356F21AD99517003FC87E /* reactNativeDefaultTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = Auth0SamplesTests;
+			path = reactNativeDefaultTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -115,7 +115,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* Auth0Samples */ = {
+		13B07FAE1A68108700A75B9A /* reactNativeDefault */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -125,20 +125,20 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				CD945658248EE64B004E1DC2 /* Auth0Samples-Bridging-Header.h */,
+				CD945658248EE64B004E1DC2 /* reactNativeDefault-Bridging-Header.h */,
 			);
-			name = Auth0Samples;
+			name = reactNativeDefault;
 			sourceTree = "<group>";
 		};
 		24A4D27A9D7BFAB9E6E87A16 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5F6DE0318D4F3833C56F2B19 /* Pods-Auth0Samples.debug.xcconfig */,
-				0B23DF90021AAE5E781BDBDE /* Pods-Auth0Samples.release.xcconfig */,
-				81B37E689B56A34ED9688334 /* Pods-Auth0SamplesTests.debug.xcconfig */,
-				DD4F3E0930AF58F7A3EC2909 /* Pods-Auth0SamplesTests.release.xcconfig */,
-				0A55395C888295B28595EDF1 /* Pods-Auth0Samples-Auth0SamplesTests.debug.xcconfig */,
-				F8BC8EB960269CD14E6E92B5 /* Pods-Auth0Samples-Auth0SamplesTests.release.xcconfig */,
+				5F6DE0318D4F3833C56F2B19 /* Pods-reactNativeDefault.debug.xcconfig */,
+				0B23DF90021AAE5E781BDBDE /* Pods-reactNativeDefault.release.xcconfig */,
+				81B37E689B56A34ED9688334 /* Pods-reactNativeDefaultTests.debug.xcconfig */,
+				DD4F3E0930AF58F7A3EC2909 /* Pods-reactNativeDefaultTests.release.xcconfig */,
+				0A55395C888295B28595EDF1 /* Pods-reactNativeDefault-reactNativeDefaultTests.debug.xcconfig */,
+				F8BC8EB960269CD14E6E92B5 /* Pods-reactNativeDefault-reactNativeDefaultTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -148,8 +148,8 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				40F009A8E0FE990815B42B17 /* libPods-Auth0Samples.a */,
-				66D2CD82003B89DD883470BF /* libPods-Auth0Samples-Auth0SamplesTests.a */,
+				40F009A8E0FE990815B42B17 /* libPods-reactNativeDefault.a */,
+				66D2CD82003B89DD883470BF /* libPods-reactNativeDefault-reactNativeDefaultTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -164,9 +164,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* Auth0Samples */,
+				13B07FAE1A68108700A75B9A /* reactNativeDefault */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* Auth0SamplesTests */,
+				00E356EF1AD99517003FC87E /* reactNativeDefaultTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				24A4D27A9D7BFAB9E6E87A16 /* Pods */,
@@ -179,10 +179,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Auth0Samples.app */,
-				00E356EE1AD99517003FC87E /* Auth0SamplesTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* Auth0Samples-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* Auth0Samples-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* reactNativeDefault.app */,
+				00E356EE1AD99517003FC87E /* reactNativeDefaultTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* reactNativeDefault-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* reactNativeDefault-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,9 +190,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* Auth0SamplesTests */ = {
+		00E356ED1AD99517003FC87E /* reactNativeDefaultTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "Auth0SamplesTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "reactNativeDefaultTests" */;
 			buildPhases = (
 				CD80D77EE5872E10B14280C4 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -205,14 +205,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = Auth0SamplesTests;
-			productName = Auth0SamplesTests;
-			productReference = 00E356EE1AD99517003FC87E /* Auth0SamplesTests.xctest */;
+			name = reactNativeDefaultTests;
+			productName = reactNativeDefaultTests;
+			productReference = 00E356EE1AD99517003FC87E /* reactNativeDefaultTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* Auth0Samples */ = {
+		13B07F861A680F5B00A75B9A /* reactNativeDefault */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Auth0Samples" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "reactNativeDefault" */;
 			buildPhases = (
 				68A2BAE00E245E68556CDCED /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -226,14 +226,14 @@
 			);
 			dependencies = (
 			);
-			name = Auth0Samples;
-			productName = Auth0Samples;
-			productReference = 13B07F961A680F5B00A75B9A /* Auth0Samples.app */;
+			name = reactNativeDefault;
+			productName = reactNativeDefault;
+			productReference = 13B07F961A680F5B00A75B9A /* reactNativeDefault.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* Auth0Samples-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* reactNativeDefault-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Auth0Samples-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "reactNativeDefault-tvOS" */;
 			buildPhases = (
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
@@ -245,14 +245,14 @@
 			);
 			dependencies = (
 			);
-			name = "Auth0Samples-tvOS";
-			productName = "Auth0Samples-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* Auth0Samples-tvOS.app */;
+			name = "reactNativeDefault-tvOS";
+			productName = "reactNativeDefault-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* reactNativeDefault-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* Auth0Samples-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* reactNativeDefault-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Auth0Samples-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "reactNativeDefault-tvOSTests" */;
 			buildPhases = (
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
@@ -263,9 +263,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "Auth0Samples-tvOSTests";
-			productName = "Auth0Samples-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* Auth0Samples-tvOSTests.xctest */;
+			name = "reactNativeDefault-tvOSTests";
+			productName = "reactNativeDefault-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* reactNativeDefault-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -282,7 +282,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = 22U9KJ5PK6;
+						DevelopmentTeam = VLTJA3JB5N;
 						LastSwiftMigration = 1150;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -296,7 +296,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Auth0Samples" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "reactNativeDefault" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -309,10 +309,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* Auth0Samples */,
-				00E356ED1AD99517003FC87E /* Auth0SamplesTests */,
-				2D02E47A1E0B4A5D006451C7 /* Auth0Samples-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* Auth0Samples-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* reactNativeDefault */,
+				00E356ED1AD99517003FC87E /* reactNativeDefaultTests */,
+				2D02E47A1E0B4A5D006451C7 /* reactNativeDefault-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* reactNativeDefault-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -386,7 +386,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Auth0Samples/Pods-Auth0Samples-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-reactNativeDefault/Pods-reactNativeDefault-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -395,7 +395,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Auth0Samples/Pods-Auth0Samples-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-reactNativeDefault/Pods-reactNativeDefault-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		68A2BAE00E245E68556CDCED /* [CP] Check Pods Manifest.lock */ = {
@@ -413,7 +413,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Auth0Samples-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-reactNativeDefault-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -426,7 +426,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Auth0Samples-Auth0SamplesTests/Pods-Auth0Samples-Auth0SamplesTests-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-reactNativeDefault-reactNativeDefaultTests/Pods-reactNativeDefault-reactNativeDefaultTests-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -435,7 +435,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Auth0Samples-Auth0SamplesTests/Pods-Auth0Samples-Auth0SamplesTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-reactNativeDefault-reactNativeDefaultTests/Pods-reactNativeDefault-reactNativeDefaultTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CD80D77EE5872E10B14280C4 /* [CP] Check Pods Manifest.lock */ = {
@@ -453,7 +453,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Auth0Samples-Auth0SamplesTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-reactNativeDefault-reactNativeDefaultTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -505,7 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* Auth0SamplesTests.m in Sources */,
+				00E356F31AD99517003FC87E /* reactNativeDefaultTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,7 +531,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* Auth0SamplesTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* reactNativeDefaultTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,12 +540,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* Auth0Samples */;
+			target = 13B07F861A680F5B00A75B9A /* reactNativeDefault */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* Auth0Samples-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* reactNativeDefault-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -557,7 +557,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = Auth0Samples;
+			path = reactNativeDefault;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -565,14 +565,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A55395C888295B28595EDF1 /* Pods-Auth0Samples-Auth0SamplesTests.debug.xcconfig */;
+			baseConfigurationReference = 0A55395C888295B28595EDF1 /* Pods-reactNativeDefault-reactNativeDefaultTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Auth0SamplesTests/Info.plist;
+				INFOPLIST_FILE = reactNativeDefaultTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -580,19 +580,19 @@
 					"-lc++",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reactNativeDefault.bbt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auth0Samples.app/Auth0Samples";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reactNativeDefault.app/reactNativeDefault";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8BC8EB960269CD14E6E92B5 /* Pods-Auth0Samples-Auth0SamplesTests.release.xcconfig */;
+			baseConfigurationReference = F8BC8EB960269CD14E6E92B5 /* Pods-reactNativeDefault-reactNativeDefaultTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = Auth0SamplesTests/Info.plist;
+				INFOPLIST_FILE = reactNativeDefaultTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -600,31 +600,32 @@
 					"-lc++",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reactNativeDefault.bbt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auth0Samples.app/Auth0Samples";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reactNativeDefault.app/reactNativeDefault";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F6DE0318D4F3833C56F2B19 /* Pods-Auth0Samples.debug.xcconfig */;
+			baseConfigurationReference = 5F6DE0318D4F3833C56F2B19 /* Pods-reactNativeDefault.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = 22U9KJ5PK6;
-				INFOPLIST_FILE = Auth0Samples/Info.plist;
+				DEVELOPMENT_TEAM = VLTJA3JB5N;
+				INFOPLIST_FILE = reactNativeDefault/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = reactNativeDefault;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) /usr/lib/swift @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.auth0samples;
-				PRODUCT_NAME = Auth0Samples;
-				SWIFT_OBJC_BRIDGING_HEADER = "Auth0Samples-Bridging-Header.h";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reactNativeDefault.bbt;
+				PRODUCT_NAME = reactNativeDefault;
+				SWIFT_OBJC_BRIDGING_HEADER = "reactNativeDefault-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -633,22 +634,23 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B23DF90021AAE5E781BDBDE /* Pods-Auth0Samples.release.xcconfig */;
+			baseConfigurationReference = 0B23DF90021AAE5E781BDBDE /* Pods-reactNativeDefault.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 22U9KJ5PK6;
-				INFOPLIST_FILE = Auth0Samples/Info.plist;
+				DEVELOPMENT_TEAM = VLTJA3JB5N;
+				INFOPLIST_FILE = reactNativeDefault/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = reactNativeDefault;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) /usr/lib/swift @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.auth0samples;
-				PRODUCT_NAME = Auth0Samples;
-				SWIFT_OBJC_BRIDGING_HEADER = "Auth0Samples-Bridging-Header.h";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reactNativeDefault.bbt;
+				PRODUCT_NAME = reactNativeDefault;
+				SWIFT_OBJC_BRIDGING_HEADER = "reactNativeDefault-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -666,14 +668,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Auth0Samples-tvOS/Info.plist";
+				INFOPLIST_FILE = "reactNativeDefault-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.auth0samples;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reactNativeDefault.bbt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -693,14 +695,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Auth0Samples-tvOS/Info.plist";
+				INFOPLIST_FILE = "reactNativeDefault-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.auth0samples;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reactNativeDefault.bbt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -719,17 +721,17 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Auth0Samples-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "reactNativeDefault-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Auth0Samples-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reactNativeDefault.bbt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auth0Samples-tvOS.app/Auth0Samples-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reactNativeDefault-tvOS.app/reactNativeDefault-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
@@ -745,17 +747,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Auth0Samples-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "reactNativeDefault-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Auth0Samples-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reactNativeDefault.bbt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auth0Samples-tvOS.app/Auth0Samples-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reactNativeDefault-tvOS.app/reactNativeDefault-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -878,7 +880,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "Auth0SamplesTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "reactNativeDefaultTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -887,7 +889,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Auth0Samples" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "reactNativeDefault" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -896,7 +898,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Auth0Samples-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "reactNativeDefault-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -905,7 +907,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Auth0Samples-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "reactNativeDefault-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -914,7 +916,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Auth0Samples" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "reactNativeDefault" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

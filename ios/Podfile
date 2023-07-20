@@ -4,7 +4,7 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 platform :ios, '12.4'
 install! 'cocoapods', :deterministic_uuids => false
 
-target 'Auth0Samples' do
+target 'reactNativeDefault' do
   config = use_native_modules!
 
   # Flags change depending on the env values.
@@ -18,7 +18,7 @@ target 'Auth0Samples' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'Auth0SamplesTests' do
+  target 'reactNativeDefaultTests' do
     inherit! :complete
     # Pods for testing
   end
