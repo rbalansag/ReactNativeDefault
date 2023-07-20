@@ -19,7 +19,7 @@
   RCTAppSetupPrepareApp(application);
 
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
-  UIView *rootView = RCTAppSetupDefaultRootView(bridge, @"Auth0Samples", nil);
+  UIView *rootView = RCTAppSetupDefaultRootView(bridge, @"reactNativeDefault", nil);
 
   if (@available(iOS 13.0, *)) {
     rootView.backgroundColor = [UIColor systemBackgroundColor];
