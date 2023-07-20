@@ -6,6 +6,7 @@
     "android": "npx react-native run-android",
     "ios": "npx react-native run-ios",
     "start": "npx react-native start",
+    "test:types": "tsc",
     "test": "jest"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
     "react": "18.2.0",
     "react-dotenv": "^0.1.3",
     "react-native": "0.69.2",
+    "react-native-reanimated": "~3.3.0",
     "react-native-auth0": "^2.16.0",
     "react-native-bundle-splitter": "^2.2.3",
     "react-native-fast-image": "^8.6.3",
@@ -40,7 +42,6 @@
     "jest": "^28.1.0",
     "metro-react-native-babel-preset": "^0.72.0",
     "react-test-renderer": "18.2.0",
-    "ts-migrate": "^0.1.35",
     "typescript": "^5.1.6"
   },
   "jest": {
