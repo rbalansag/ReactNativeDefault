@@ -1,4 +1,4 @@
-package com.auth0samples;
+package com.reactNativeDefault.bbt;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
@@ -6,7 +6,7 @@ import com.facebook.react.ReactRootView;
 
 public class MainActivity extends ReactActivity {
   protected String getMainComponentName() {
-    return "Auth0Samples";
+    return "reactNativeDefault";
   }
   /**
    * Returns the instance of the {@link ReactActivityDelegate}.
