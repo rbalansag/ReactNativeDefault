@@ -9,7 +9,12 @@
 import React from 'react';
 import {Alert, Button, StyleSheet, Text, View} from 'react-native';
 import {useAuth0, Auth0Provider} from 'react-native-auth0';
+import { NavigationContainer } from "@react-navigation/native";
+import { Provider } from "react-redux";
+import { PersistGate } from "redux-persist/integration/react";
+import { store, persistor } from "./src/redux/store";
 import config from './auth0-configuration';
+import Navigation from "./src/navigation";
 
 const Home = () => {
   const {authorize, clearSession, user, getCredentials, error} = useAuth0();
@@ -43,7 +48,13 @@ const Home = () => {
 const App = () => {
   return (
     <Auth0Provider domain={config.domain} clientId={config.clientId}>
-      <Home />
+      <Provider store={store}>
+         <PersistGate loading={false} persistor={persistor}>
+            <NavigationContainer>
+               <Navigation />
+            </NavigationContainer>
+         </PersistGate>
+      </Provider>
     </Auth0Provider>
   );
 };

@@ -42,35 +42,10 @@ const Index = (props): JSX.Element => {
                {(formikProps: FormikProps<FormValues>) => (
                   <View>
                      <Text>Email</Text>
-                     <Field
-                        name="email"
-                        style={styles.textInput}
-                        component={TextField}
-                        placeholder="Email"
-                        onChangeText={formikProps.handleChange("email")}
-                        value={formikProps.values.email}
-                     />
-                     <ErrorMessage name="email" component={Text} />
+                     
 
                      <Text>Password</Text>
-                     <Field
-                        name="password"
-                        style={styles.textInput}
-                        component={TextField}
-                        placeholder="Password"
-                        onChangeText={formikProps.handleChange("password")}
-                        value={formikProps.values.password}
-                        secureTextEntry
-                     />
-                     <ErrorMessage name="password" component={Text} />
-                     <Button
-                        backgroundColor="#0000F0"
-                        label="Submit"
-                        labelStyle={{ fontWeight: "600" }}
-                        marginT-30
-                        enableShadow
-                        onPress={formikProps.handleSubmit}
-                     />
+                     
                   </View>
                )}
             </Formik>
