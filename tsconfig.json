@@ -6,7 +6,6 @@
     "isolatedModules": true,
     "jsx": "react-native",
     "lib": ["esnext"],
-    "types": ["react-native", "jest"],
     "moduleResolution": "node",
     "noEmit": true,
     "strict": true,
@@ -18,7 +17,8 @@
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
-    "allowUnreachableCode": false
+    "allowUnreachableCode": false,
+    "types": ["react", "react-native", "jest"],
   },
   "exclude": [
     "node_modules",
