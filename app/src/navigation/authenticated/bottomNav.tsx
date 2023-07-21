@@ -1,6 +1,6 @@
 // library imports
 import React from "react";
-import { createStackNavigator, TransitionPresets } from "@react-navigation/stack";
+import { Platform } from "react-native";
 import { register } from "react-native-bundle-splitter";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; 
 
@@ -15,7 +15,7 @@ const Tab = createBottomTabNavigator();
 
 const screenOptions = {
    headerShown: false,
-   tabBarStyle: {zIndex: 901, elevation: 15, backgroundColor: '#F8FAFC', height: 50},
+   tabBarStyle: {zIndex: 901, elevation: 15, backgroundColor: '#F8FAFC', height: Platform.OS == "android" ? 50 : 100},
    tabBarShowLabel: false,
    tabBarHideOnKeyboard: true
 }
