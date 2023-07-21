@@ -1,60 +1,67 @@
 // library imports
-import React from "react";
-import { Formik, Field, ErrorMessage, FormikProps } from "formik";
-import * as yup from "yup";
-import { View, Text, TextField, Button } from "react-native-ui-lib";
-import { FormValues } from "../types/index";
-import { useAuth0, Auth0Provider } from "react-native-auth0";
-
-// constant import
-import { email, password } from "../constants";
+import React from 'react';
+import {View, Text} from 'react-native-ui-lib';
+import {FormValues, iProps} from '../types/index';
+import {useAuth0} from 'react-native-auth0';
+import {Alert, Button} from 'react-native';
 
 // styling import
-import { styles } from "../styling/index";
+import {styles} from '../styling/index';
 
-// Define the validation schema using Yup
-const validationSchema = yup.object().shape({
-   email: yup.string().email("Invalid email").required("Email is required"),
-   password: yup.string().required("Password is required"),
-});
+const Home = () => {
+  const {authorize, clearSession, user, getCredentials, error} = useAuth0();
 
-const Index = (props): JSX.Element => {
-   const { user, error, authorize } = useAuth0();
+  const onLogin = async () => {
+    await authorize({scope: 'openid profile email'});
+    const {accessToken} = await getCredentials();
+    Alert.alert('AccessToken: ' + accessToken);
+  };
 
-   // Handle form submission
-   const handleSubmit = (values: FormValues) => {
-      props.getFormParam(values);
-      onPress();
-   };
+  const loggedIn = user !== undefined && user !== null;
 
-   const onPress = async () => {
-      try {
-         await authorize({ scope: "openid profile email" }, { customScheme: "auth0.com.roadninja.bbt" });
-      } catch (e) {
-         console.log(e);
-      }
-   };
+  const onLogout = async () => {
+    await clearSession({federated: true}, {localStorageOnly: false});
+  };
 
-   return (
-      <View padding-s5>
-         <Auth0Provider domain={"dev-mvp8fq05h32j8h2e.us.auth0.com"} clientId={"3aOSnU02sP5agUPRbd8VR9GIf5UwyDLF"}>
-            <Formik initialValues={{ email, password }} onSubmit={handleSubmit} validationSchema={validationSchema}>
-               {(formikProps: FormikProps<FormValues>) => (
-                  <View>
-                     <Text>Email</Text>
-                     
+  return (
+    <View>
+      <Text style={styles.header}> Auth0Sample - Login </Text>
+      {user && <Text>You are logged in as {user.name}</Text>}
+      {!user && <Text>You are not logged in</Text>}
+      <Button
+        onPress={loggedIn ? onLogout : onLogin}
+        title={loggedIn ? 'Log out' : 'Log in'}
+      />
+      {error && <Text style={styles.error}>{error.message}</Text>}
+    </View>
+  );
+};
 
-                     <Text>Password</Text>
-                     
-                  </View>
-               )}
-            </Formik>
-            {user && <Text>Logged in as {user.name}</Text>}
-            {!user && <Text>Not logged in</Text>}
-            {error && <Text>{error.message}</Text>}
-         </Auth0Provider>
-      </View>
-   );
+const Index = (props: iProps): JSX.Element => {
+  const {user, error, authorize} = useAuth0();
+
+  // Handle form submission
+  const handleSubmit = (values: FormValues) => {
+    props.getFormParam(values);
+    onPress();
+  };
+
+  const onPress = async () => {
+    try {
+      await authorize(
+        {scope: 'openid profile email'},
+        {customScheme: 'auth0.com.roadninja.bbt'},
+      );
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  return (
+    <View padding-s5>
+      <Home />
+    </View>
+  );
 };
 
 export default Index;

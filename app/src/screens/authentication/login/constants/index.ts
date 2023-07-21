@@ -1,4 +1,7 @@
-import { tEmail, tKey, tPassword, tValue } from "../types";
+import { tEmail, tKey, tPassword, tValue, tFullfilled } from "../types";
+
+// main index
+export const FULFILLED: tFullfilled = 'fulfilled';
 
 // form
 export const email: tEmail = "";

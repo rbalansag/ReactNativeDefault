@@ -1,8 +1,13 @@
-import React, { useEffect, useMemo, useState } from "react";
+// library imports
+import React from "react";
 import { createStackNavigator, TransitionPresets } from "@react-navigation/stack";
+import { register } from "react-native-bundle-splitter";
+
+// component imports
 import navigationStrings from "../constants/navigationStrings"
-import LoginScreen from "../../screens/authentication/login";
-import ForgotPasswordScreen from "../../screens/authentication/login/forgotPassword";
+   const LoginScreen = register({ loader: () => import("../../screens/authentication/login"), group: "LOGIN", name:navigationStrings.LOGIN_FORM});
+   const ForgotPasswordScreen = register({ loader: () => import("../../screens/authentication/login/forgotPassword"), group: "LOGIN", name:navigationStrings.FORGOT_PASSWORD });
+
 
 export default function Index() {
    const Stack = createStackNavigator();

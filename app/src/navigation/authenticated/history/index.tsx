@@ -1,9 +1,13 @@
-import React, { useEffect, useMemo, useState } from "react";
+// library imports
+import React from "react";
 import { createStackNavigator, TransitionPresets } from "@react-navigation/stack";
+import { register } from "react-native-bundle-splitter";
+
+// component imports
 import navigationStrings from "../../constants/navigationStrings"
-import LogHistoryScreen from "../../../screens/main/history/logHistoryScreen";
-import LogScreen from "../../../screens/main/newLog/overview/overviewScreen"
-import ReviewListScreen from "../../../screens/main/newLog/reviewAndComplete/reviewListScreen"
+const LogHistoryScreen = register({ loader: () => import("../../../screens/main/history/logHistoryScreen"), group: "HISTORY", name:navigationStrings.HISTORY_LANDING });
+const LogScreen = register({ loader: () => import("../../../screens/main/newLog/overview/overviewScreen"), group: "HISTORY", name:navigationStrings.HISTORY_TIMELINE_VIEW });
+const ReviewListScreen = register({ loader: () => import("../../../screens/main/newLog/reviewAndComplete/reviewListScreen"), group: "HISTORY", name:navigationStrings.HISTORY_LIST_VIEW });
 
 export default function Index(props) {
    const Stack = createStackNavigator();

@@ -1,18 +1,21 @@
 
 import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
-    paragraph: {
-       marginTop: 34,
-       margin: 24,
-       fontSize: 18,
-       fontWeight: "bold",
-       textAlign: "center",
+   container: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#F5FCFF',
     },
-    textInput: {
-       height: 35,
-       borderColor: "gray",
-       borderWidth: 0.5,
-       padding: 4,
+    header: {
+      fontSize: 20,
+      textAlign: 'center',
+      margin: 10,
+    },
+    error: {
+      margin: 20,
+      textAlign: 'center',
+      color: '#D8000C',
     },
  });
  

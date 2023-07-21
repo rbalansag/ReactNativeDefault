@@ -1,8 +1,12 @@
-import React, { useEffect, useMemo, useState } from "react";
+// library imports
+import React from "react";
 import { createStackNavigator, TransitionPresets } from "@react-navigation/stack";
+import { register } from "react-native-bundle-splitter";
+
+// component imports
 import navigationStrings from "../constants/navigationStrings"
-import PinScreen from "../../screens/authentication/pin";
-import ForgotPinScreen from "../../screens/authentication/pin/forgotPin";
+const PinScreen = register({ loader: () => import("../../screens/authentication/pin"), group: "PIN", name:navigationStrings.ENTER_PIN });
+const ForgotPinScreen = register({ loader: () => import("../../screens/authentication/pin/forgotPin"), group: "PIN", name:navigationStrings.FORGOT_PIN });
 
 export default function Index() {
    const Stack = createStackNavigator();

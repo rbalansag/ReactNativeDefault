@@ -97,13 +97,11 @@ const Index = (props) => {
          <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
             <View padding-s5>
                {/* Loader sample */}
-               {loading && <LoaderScreen color={Colors.blue30} message="Loading..." overlay />}
+               {/* {loading && <LoaderScreen color={Colors.blue30} message="Loading..." overlay />} */}
                {/* Navigation sample */}
-               <Landing navigation={props.navigation} />
-               {/* Formik + Yup sample */}
-               <Form getFormParam={getFormParam} />
+               {/* <Landing navigation={props.navigation} /> */}
                {/* Secure token and data storage saving - 2048 bytes MAX*/}
-               <Token initialKey={initialKey} initialValue={initialValue} />
+               {/* <Token initialKey={initialKey} initialValue={initialValue} /> */}
             </View>
          </TouchableWithoutFeedback>
       </KeyboardAwareScrollView>

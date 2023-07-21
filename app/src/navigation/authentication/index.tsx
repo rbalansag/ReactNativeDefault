@@ -1,13 +1,14 @@
-import React, { useEffect, useMemo, useState } from "react";
+// library imports
+import React from "react";
 import { createStackNavigator, TransitionPresets } from "@react-navigation/stack";
 import { register } from "react-native-bundle-splitter";
-import useNetworkStatus from "../../onStart/useNetworkStatus";
-import { Text, View, Toast } from "react-native-ui-lib";
+
+// component imports
 import navigationStrings from "../constants/navigationStrings"
-import LandingScreen from "../../screens/authentication/landing";
-import SignupScreen from './signup';
-import LoginScreen from './login';
-import EnterPinScreen from './enterPin';
+const LandingScreen = register({ loader: () => import("../../screens/authentication/landing"), group: "LANDING", name:navigationStrings.AUTHENTICATION_LANDING });
+const SignupScreen = register({ loader: () => import("./signup"), group: "SIGNUP", name:navigationStrings.SIGNUP });
+const LoginScreen = register({ loader: () => import("./login"), group: "LOGIN", name:navigationStrings.LOGIN });
+const EnterPinScreen = register({ loader: () => import("./enterPin"), group: "PIN", name:navigationStrings.PIN });
 
 export default function Index() {
    const Stack = createStackNavigator();

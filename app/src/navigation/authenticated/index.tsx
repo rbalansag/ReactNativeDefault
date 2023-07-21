@@ -1,10 +1,14 @@
-import React, { useEffect, useMemo, useState } from "react";
+// library imports
+import React from "react";
 import { createStackNavigator, TransitionPresets } from "@react-navigation/stack";
+import { register } from "react-native-bundle-splitter";
+
+// component imports
 import navigationStrings from "../constants/navigationStrings"
-import BottomNav from "./bottomNav";
-import Log from "./newLog/log";
-import ViewEventScreen from "../../screens/main/history/viewEventScreen";
-import ExportScreen from "../../screens/main/history/exportScreen";
+const BottomNav = register({ loader: () => import("./bottomNav"), group: "BOTTOMNAV", name:navigationStrings.MAIN_NAVIGATION });
+const Log = register({ loader: () => import("./newLog/log"), group: "LOG", name:navigationStrings.CREATE_LOG });
+const ViewEventScreen = register({ loader: () => import("../../screens/main/history/viewEventScreen"), group: "VIEWEVENT", name:navigationStrings.VIEW_EVENT });
+const ExportScreen = register({ loader: () => import("../../screens/main/history/exportScreen"), group: "EXPORT", name:navigationStrings.EXPORT });
 
 export default function Index() {
    const Stack = createStackNavigator();

@@ -4,7 +4,7 @@ import { preload } from "react-native-bundle-splitter";
 import { View, Text, Button, Typography } from "react-native-ui-lib";
 
 // component imports
-import navigationStrings from "../../navigation/constants/navigationStrings";
+import navigationStrings from "../../../navigation/constants/navigationStrings";
 
 export default function Index(props: any) {
    return (

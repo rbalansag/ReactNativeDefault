@@ -6,47 +6,36 @@
  * @flow strict-local
  */
 
-import React from 'react';
-import {Alert, Button, StyleSheet, Text, View} from 'react-native';
-import {useAuth0, Auth0Provider} from 'react-native-auth0';
+import React, { PureComponent } from 'react';
+import { Auth0Provider } from 'react-native-auth0';
 import { NavigationContainer } from "@react-navigation/native";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "./src/redux/store";
 import config from './auth0-configuration';
 import Navigation from "./src/navigation";
+import { investigate } from 'react-native-bundle-splitter/dist/utils';
+import Instabug, { InvocationEvent } from 'instabug-reactnative';
 
-const Home = () => {
-  const {authorize, clearSession, user, getCredentials, error} = useAuth0();
+const App= (): JSX.Element => {
 
-  const onLogin = async () => {
-    await authorize({scope: 'openid profile email'});
-    const {accessToken} = await getCredentials();
-    Alert.alert('AccessToken: ' + accessToken);
-  };
+   // instabug integration
+   // note: need to rebuild app when updating from BETA to LIVE
+   const isLive: boolean = false;
+   const token = isLive ? "64974045bdefd8c7ad8893fce36f1dc1" : "eac7435f743eb8e93a1ca75f278bf194"
 
-  const loggedIn = user !== undefined && user !== null;
+   Instabug.init({
+      token: token,
+      invocationEvents: [InvocationEvent.shake, InvocationEvent.screenshot, InvocationEvent.floatingButton],
+   });
 
-  const onLogout = async () => {
-    await clearSession({federated: true}, {localStorageOnly: false});
-  };
+   
+   // please remove on staging and prod only
+   // check loaded screens to reduce heavy loading on launch
+   console.log('Bundle info: ', `loaded: ${investigate().loaded.length}, waiting: ${investigate().waiting.length}`);
 
-  return (
-    <View style={styles.container}>
-      <Text style={styles.header}> Auth0Sample - Login </Text>
-      {user && <Text>You are logged in as {user.name}</Text>}
-      {!user && <Text>You are not logged in</Text>}
-      <Button
-        onPress={loggedIn ? onLogout : onLogin}
-        title={loggedIn ? 'Log Out' : 'Log In'}
-      />
-      {error && <Text style={styles.error}>{error.message}</Text>}
-    </View>
-  );
-};
-
-const App = () => {
-  return (
+   
+return (
     <Auth0Provider domain={config.domain} clientId={config.clientId}>
       <Provider store={store}>
          <PersistGate loading={false} persistor={persistor}>
@@ -58,24 +47,5 @@ const App = () => {
     </Auth0Provider>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  header: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  error: {
-    margin: 20,
-    textAlign: 'center',
-    color: '#D8000C'
-  }
-});
 
 export default App;

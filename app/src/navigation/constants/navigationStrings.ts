@@ -1,8 +1,6 @@
 export default {
     BRAND_NAME: "Main Stack", // Change Brand name if new project
-    HOME: "Home",
     LANDING: "Landing",
-    LOGIN: "Login",
 
     AUTHENTICATION: "authentication",
     AUTHENTICATION_LANDING: "authenticationLanding",
@@ -22,6 +20,7 @@ export default {
     HOME: "home",
     NEW_LOG: "newLog",
     NEW_LOG_LANDING: "newLogLanding",
+    CREATE_LOG_FOR_TODAY: "logForToday",
     HISTORY: "history",
     ACCOUNT: "account",
     CREATE_LOG: "createLogForToday",
