@@ -19,6 +19,7 @@ import { investigate } from 'react-native-bundle-splitter/dist/utils';
 
 
 const App = () => {
+// please remove on staging and prod only
 // check loaded screens to reduce heavy loading on launch
 console.log('Bundle info: ', `loaded: ${investigate().loaded.length}, waiting: ${investigate().waiting.length}`);
 return (

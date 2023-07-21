@@ -1,14 +1,15 @@
-import React, { useEffect, useMemo, useState } from "react";
+// library imports
+import React from "react";
 import { createStackNavigator, TransitionPresets } from "@react-navigation/stack";
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; 
 import { register } from "react-native-bundle-splitter";
-import useNetworkStatus from "../../onStart/useNetworkStatus";
-import { Text, View, Toast } from "react-native-ui-lib";
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; 
+
+// component imports
 import navigationStrings from "../constants/navigationStrings"
-import HomeScreen from "../../screens/main/home";
-import NewLogScreen from "./newLog";
-import HistoryScreen from "./history";
-import AccountScreen from "./account";
+const HomeScreen = register({ loader: () => import("../../screens/main/home"), group: "HOME", name:navigationStrings.HOME });
+const NewLogScreen = register({ loader: () => import("./newLog"), group: "NEWLOG", name:navigationStrings.NEW_LOG });
+const HistoryScreen = register({ loader: () => import("./history"), group: "HISTORY", name:navigationStrings.HISTORY });
+const AccountScreen = register({ loader: () => import("./account"), group: "ACCOUNT", name:navigationStrings.ACCOUNT });
 
 const Tab = createBottomTabNavigator(); 
 

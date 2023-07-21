@@ -20,6 +20,7 @@ export default {
     HOME: "home",
     NEW_LOG: "newLog",
     NEW_LOG_LANDING: "newLogLanding",
+    CREATE_LOG_FOR_TODAY: "logForToday",
     HISTORY: "history",
     ACCOUNT: "account",
     CREATE_LOG: "createLogForToday",

@@ -5,10 +5,10 @@ import { register } from "react-native-bundle-splitter";
 
 // component imports
 import navigationStrings from "../constants/navigationStrings"
-const BottomNav = register({ loader: () => import("./bottomNav"), group: "BOTTOMNAV" });
-const Log = register({ loader: () => import("./newLog/log"), group: "LOG" });
-const ViewEventScreen = register({ loader: () => import("../../screens/main/history/viewEventScreen"), group: "VIEWEVENT" });
-const ExportScreen = register({ loader: () => import("../../screens/main/history/exportScreen"), group: "EXPORT" });
+const BottomNav = register({ loader: () => import("./bottomNav"), group: "BOTTOMNAV", name:navigationStrings.MAIN_NAVIGATION });
+const Log = register({ loader: () => import("./newLog/log"), group: "LOG", name:navigationStrings.CREATE_LOG });
+const ViewEventScreen = register({ loader: () => import("../../screens/main/history/viewEventScreen"), group: "VIEWEVENT", name:navigationStrings.VIEW_EVENT });
+const ExportScreen = register({ loader: () => import("../../screens/main/history/exportScreen"), group: "EXPORT", name:navigationStrings.EXPORT });
 
 export default function Index() {
    const Stack = createStackNavigator();

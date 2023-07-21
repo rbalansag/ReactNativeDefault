@@ -5,10 +5,10 @@ import { register } from "react-native-bundle-splitter";
 
 // component imports
 import navigationStrings from "../constants/navigationStrings"
-const LandingScreen = register({ loader: () => import("../../screens/authentication/landing"), group: "LANDING" });
-const SignupScreen = register({ loader: () => import("./signup"), group: "SIGNUP" });
-const LoginScreen = register({ loader: () => import("./login"), group: "LOGIN" });
-const EnterPinScreen = register({ loader: () => import("./enterPin"), group: "PIN" });
+const LandingScreen = register({ loader: () => import("../../screens/authentication/landing"), group: "LANDING", name:navigationStrings.AUTHENTICATION_LANDING });
+const SignupScreen = register({ loader: () => import("./signup"), group: "SIGNUP", name:navigationStrings.SIGNUP });
+const LoginScreen = register({ loader: () => import("./login"), group: "LOGIN", name:navigationStrings.LOGIN });
+const EnterPinScreen = register({ loader: () => import("./enterPin"), group: "PIN", name:navigationStrings.PIN });
 
 export default function Index() {
    const Stack = createStackNavigator();

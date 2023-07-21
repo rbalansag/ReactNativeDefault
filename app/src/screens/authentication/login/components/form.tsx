@@ -1,12 +1,9 @@
 // library imports
 import React from 'react';
-import {View, Text, TextField} from 'react-native-ui-lib';
-import {FormValues} from '../types/index';
-import {useAuth0, Auth0Provider} from 'react-native-auth0';
-import {Alert, StyleSheet, Button} from 'react-native';
-
-// constant import
-import {email, password} from '../constants';
+import {View, Text} from 'react-native-ui-lib';
+import {FormValues, iProps} from '../types/index';
+import {useAuth0} from 'react-native-auth0';
+import {Alert, Button} from 'react-native';
 
 // styling import
 import {styles} from '../styling/index';
@@ -40,7 +37,7 @@ const Home = () => {
   );
 };
 
-const Index = (props): JSX.Element => {
+const Index = (props: iProps): JSX.Element => {
   const {user, error, authorize} = useAuth0();
 
   // Handle form submission

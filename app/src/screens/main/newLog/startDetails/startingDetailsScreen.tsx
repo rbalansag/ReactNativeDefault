@@ -13,7 +13,7 @@ export default function Index(props) {
                <Text style={{fontSize: 20, backgroundColor: 'yellow', paddingVertical:5, paddingHorizontal:5, marginTop: 20}}>Starting vehicle</Text>
             </TouchableOpacity>
             :
-            <TouchableOpacity onPress={() => props.navigation.navigate(navigationStrings.REVIEW_LIST, { screen_for: props.route.params.screen_for })}>
+            <TouchableOpacity onPress={() => props.navigation.navigate(navigationStrings.REVIEW_LIST, { screen_for: props?.route?.params?.screen_for })}>
                <Text style={{fontSize: 20, backgroundColor: 'yellow', paddingVertical:5, paddingHorizontal:5, marginTop: 20}}>Review list</Text>
             </TouchableOpacity>
          }

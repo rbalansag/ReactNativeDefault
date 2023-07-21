@@ -1,10 +1,15 @@
-import React, { useEffect, useMemo, useState } from "react";
-import { Text, View, Toast } from "react-native-ui-lib";
-import { TouchableOpacity } from 'react-native';
-import navigationStrings from "../../../navigation/constants/navigationStrings"
-import { preload } from "react-native-bundle-splitter";
+// library imports
+import React from 'react';
+import {Text, View } from 'react-native-ui-lib';
+import {ActivityIndicator, TouchableOpacity} from 'react-native';
+import {register, preload} from 'react-native-bundle-splitter';
+import {FULFILLED} from './constants';
+import {iProps} from './types';
 
-export default function Index(props) {
+// component imports
+import navigationStrings from '../../../navigation/constants/navigationStrings';
+
+export default function Index(props: iProps) {
    const FULFILLED = 'fulfilled';
 
    return (
@@ -16,6 +21,7 @@ export default function Index(props) {
                   // async function can be added here before navigating
                   // preload group first before navigation *
                   preload().group('SIGNUP'),
+                  preload().component(navigationStrings.SIGNUP),
                ]);
                if (status === FULFILLED) {
                   props.navigation.navigate(navigationStrings.SIGNUP);
@@ -29,6 +35,7 @@ export default function Index(props) {
                   // async function can be added here before navigating
                   // preload group first before navigation *
                   preload().group('LOGIN'),
+                  preload().component(navigationStrings.LOGIN),
                ]);
                if (status === FULFILLED) {
                   props.navigation.navigate(navigationStrings.LOGIN);
@@ -42,6 +49,7 @@ export default function Index(props) {
                   // async function can be added here before navigating
                   // preload group first before navigation *
                   preload().group('PIN'),
+                  preload().component(navigationStrings.PIN),
                ]);
                if (status === FULFILLED) {
                   props.navigation.navigate(navigationStrings.PIN);
@@ -55,6 +63,7 @@ export default function Index(props) {
                   // async function can be added here before navigating
                   // preload group first before navigation *
                   preload().group('LOGIN'),
+                  preload().component(navigationStrings.AUTHENTICATED),
                ]);
                if (status === FULFILLED) {
                   props.navigation.navigate(navigationStrings.AUTHENTICATED);

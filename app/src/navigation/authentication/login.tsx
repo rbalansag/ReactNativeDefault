@@ -5,8 +5,8 @@ import { register } from "react-native-bundle-splitter";
 
 // component imports
 import navigationStrings from "../constants/navigationStrings"
-const LoginScreen = register({ loader: () => import("../../screens/authentication/login"), group: "LOGIN" });
-const ForgotPasswordScreen = register({ loader: () => import("../../screens/authentication/login/forgotPassword"), group: "LOGIN" });
+   const LoginScreen = register({ loader: () => import("../../screens/authentication/login"), group: "LOGIN", name:navigationStrings.LOGIN_FORM});
+   const ForgotPasswordScreen = register({ loader: () => import("../../screens/authentication/login/forgotPassword"), group: "LOGIN", name:navigationStrings.FORGOT_PASSWORD });
 
 
 export default function Index() {

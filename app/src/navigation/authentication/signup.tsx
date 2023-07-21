@@ -5,10 +5,10 @@ import { register } from "react-native-bundle-splitter";
 
 // component imports
 import navigationStrings from "../constants/navigationStrings"
-const SignupScreen = register({ loader: () => import("../../screens/authentication/signup"), group: "SIGNUP" });
-const LicenseScreen = register({ loader: () => import("../../screens/authentication/signup/driversLicense"), group: "SIGNUP" });
-const SetPasswordScreen = register({ loader: () => import("../../screens/authentication/signup/setPassword"), group: "SIGNUP" });
-const SetPinScreen = register({ loader: () => import("../../screens/authentication/signup/setPin"), group: "SIGNUP" });
+const SignupScreen = register({ loader: () => import("../../screens/authentication/signup"), group: "SIGNUP", name:navigationStrings.SIGNUP_DETAILS });
+const LicenseScreen = register({ loader: () => import("../../screens/authentication/signup/driversLicense"), group: "SIGNUP", name:navigationStrings.SIGNUP_LICENSE });
+const SetPasswordScreen = register({ loader: () => import("../../screens/authentication/signup/setPassword"), group: "SIGNUP", name:navigationStrings.SIGNUP_PASSWORD });
+const SetPinScreen = register({ loader: () => import("../../screens/authentication/signup/setPin"), group: "SIGNUP", name:navigationStrings.SIGNUP_PIN });
 
 
 export default function Index() {
