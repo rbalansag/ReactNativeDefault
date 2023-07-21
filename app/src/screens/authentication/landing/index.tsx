@@ -1,8 +1,8 @@
 // library imports
 import React from 'react';
 import {Text, View } from 'react-native-ui-lib';
-import {ActivityIndicator, TouchableOpacity} from 'react-native';
-import {register, preload} from 'react-native-bundle-splitter';
+import {TouchableOpacity} from 'react-native';
+import {preload} from 'react-native-bundle-splitter';
 import {FULFILLED} from './constants';
 import {iProps} from './types';
 
@@ -10,7 +10,6 @@ import {iProps} from './types';
 import navigationStrings from '../../../navigation/constants/navigationStrings';
 
 export default function Index(props: iProps) {
-   const FULFILLED = 'fulfilled';
 
    return (
       <View style={{justifyContent: 'center', flex: 1, alignItems: 'center'}}>

@@ -15,7 +15,7 @@ const LANDING = register({
    name: navigationStrings.LANDING,
 });
 const HOME = register({
-   loader: () => import("../../screens/home"),
+   loader: () => import("../../screens/_EXAMPLE/home"),
    group: "MAIN_STACK",
    name: navigationStrings.HOME,
 });

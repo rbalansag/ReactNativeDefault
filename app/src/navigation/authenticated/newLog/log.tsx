@@ -5,14 +5,14 @@ import { register } from "react-native-bundle-splitter";
 
 // component imports
 import navigationStrings from "../../constants/navigationStrings"
-const StartingDetailsScreen = register({ loader: () => import("../../../screens/main/newLog/startDetails/startingDetailsScreen"), group: "NEWLOG" });
-const StartingVehicleScreen = register({ loader: () => import("../../../screens/main/newLog/startDetails/startingVehicleScreen"), group: "NEWLOG" });
-const StartingCompanyScreen = register({ loader: () => import("../../../screens/main/newLog/startDetails/startingCompanyScreen"), group: "NEWLOG" });
-const LogScreen = register({ loader: () => import("../../../screens/main/newLog/overview/overviewScreen"), group: "NEWLOG" });
-const DetailScreen = register({ loader: () => import("../../../screens/main/newLog/events/detailsScreen"), group: "NEWLOG" });
-const ReviewListScreen = register({ loader: () => import("../../../screens/main/newLog/reviewAndComplete/reviewListScreen"), group: "NEWLOG" });
-const CompleteScreen = register({ loader: () => import("../../../screens/main/newLog/reviewAndComplete/completeScreen"), group: "NEWLOG" });
-const EditCompanyScreen = register({ loader: () => import("../../../screens/main/account/editCompanyScreen"), group: "NEWLOG" });
+const StartingDetailsScreen = register({ loader: () => import("../../../screens/main/newLog/startDetails/startingDetailsScreen"), group: "NEWLOG", name:navigationStrings.STARTING_DETAILS });
+const StartingVehicleScreen = register({ loader: () => import("../../../screens/main/newLog/startDetails/startingVehicleScreen"), group: "NEWLOG", name:navigationStrings.STARTING_VEHICLE });
+const StartingCompanyScreen = register({ loader: () => import("../../../screens/main/newLog/startDetails/startingCompanyScreen"), group: "NEWLOG", name:navigationStrings.STARTING_COMPANY });
+const LogScreen = register({ loader: () => import("../../../screens/main/newLog/overview/overviewScreen"), group: "NEWLOG", name:navigationStrings.OVERVIEW });
+const DetailScreen = register({ loader: () => import("../../../screens/main/newLog/events/detailsScreen"), group: "NEWLOG", name:navigationStrings.EVENT_DETAILS });
+const ReviewListScreen = register({ loader: () => import("../../../screens/main/newLog/reviewAndComplete/reviewListScreen"), group: "NEWLOG", name:navigationStrings.REVIEW_LIST });
+const CompleteScreen = register({ loader: () => import("../../../screens/main/newLog/reviewAndComplete/completeScreen"), group: "NEWLOG", name:navigationStrings.REVIEW_COMPANY_LIST });
+const EditCompanyScreen = register({ loader: () => import("../../../screens/main/account/editCompanyScreen"), group: "NEWLOG", name:navigationStrings.REVIEW_EDIT_COMPANY });
 
 
 export default function Index(props) {

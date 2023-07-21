@@ -34,8 +34,6 @@ const App= (): JSX.Element => {
    // check loaded screens to reduce heavy loading on launch
    console.log('Bundle info: ', `loaded: ${investigate().loaded.length}, waiting: ${investigate().waiting.length}`);
 
-
-
    
 return (
     <Auth0Provider domain={config.domain} clientId={config.clientId}>
