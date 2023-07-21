@@ -7,8 +7,7 @@
  */
 
 import React from 'react';
-import {Alert, Button, StyleSheet, Text, View} from 'react-native';
-import {useAuth0, Auth0Provider} from 'react-native-auth0';
+import { Auth0Provider } from 'react-native-auth0';
 import { NavigationContainer } from "@react-navigation/native";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
