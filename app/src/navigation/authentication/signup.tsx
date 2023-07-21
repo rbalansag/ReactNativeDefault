@@ -1,10 +1,15 @@
-import React, { useEffect, useMemo, useState } from "react";
+// library imports
+import React from "react";
 import { createStackNavigator, TransitionPresets } from "@react-navigation/stack";
+import { register } from "react-native-bundle-splitter";
+
+// component imports
 import navigationStrings from "../constants/navigationStrings"
-import SignupScreen from "../../screens/authentication/signup";
-import LicenseScreen from "../../screens/authentication/signup/driversLicense";
-import SetPasswordScreen from "../../screens/authentication/signup/setPassword";
-import SetPinScreen from "../../screens/authentication/signup/setPin";
+const SignupScreen = register({ loader: () => import("../../screens/authentication/signup"), group: "SIGNUP" });
+const LicenseScreen = register({ loader: () => import("../../screens/authentication/signup/driversLicense"), group: "SIGNUP" });
+const SetPasswordScreen = register({ loader: () => import("../../screens/authentication/signup/setPassword"), group: "SIGNUP" });
+const SetPinScreen = register({ loader: () => import("../../screens/authentication/signup/setPin"), group: "SIGNUP" });
+
 
 export default function Index() {
    const Stack = createStackNavigator();

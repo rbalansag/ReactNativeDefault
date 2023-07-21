@@ -15,38 +15,13 @@ import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "./src/redux/store";
 import config from './auth0-configuration';
 import Navigation from "./src/navigation";
+import { investigate } from 'react-native-bundle-splitter/dist/utils';
 
-const Home = () => {
-  const {authorize, clearSession, user, getCredentials, error} = useAuth0();
-
-  const onLogin = async () => {
-    await authorize({scope: 'openid profile email'});
-    const {accessToken} = await getCredentials();
-    Alert.alert('AccessToken: ' + accessToken);
-  };
-
-  const loggedIn = user !== undefined && user !== null;
-
-  const onLogout = async () => {
-    await clearSession({federated: true}, {localStorageOnly: false});
-  };
-
-  return (
-    <View style={styles.container}>
-      <Text style={styles.header}> Auth0Sample - Login </Text>
-      {user && <Text>You are logged in as {user.name}</Text>}
-      {!user && <Text>You are not logged in</Text>}
-      <Button
-        onPress={loggedIn ? onLogout : onLogin}
-        title={loggedIn ? 'Log Out' : 'Log In'}
-      />
-      {error && <Text style={styles.error}>{error.message}</Text>}
-    </View>
-  );
-};
 
 const App = () => {
-  return (
+// check loaded screens to reduce heavy loading on launch
+console.log('Bundle info: ', `loaded: ${investigate().loaded.length}, waiting: ${investigate().waiting.length}`);
+return (
     <Auth0Provider domain={config.domain} clientId={config.clientId}>
       <Provider store={store}>
          <PersistGate loading={false} persistor={persistor}>
@@ -58,24 +33,5 @@ const App = () => {
     </Auth0Provider>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  header: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  error: {
-    margin: 20,
-    textAlign: 'center',
-    color: '#D8000C'
-  }
-});
 
 export default App;

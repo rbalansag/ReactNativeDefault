@@ -4,15 +4,15 @@ import { register } from "react-native-bundle-splitter";
 import useNetworkStatus from "../onStart/useNetworkStatus";
 import { Text, View, Toast } from "react-native-ui-lib";
 import navigationStrings from "./constants/navigationStrings"
-import Authentication from './authentication';
-import Authenticated from './authenticated';
+const Authentication = register({ loader: () => import("./authentication"), group: "AUTHENTICATION" });
+const Authenticated = register({ loader: () => import("./authenticated"), group: "AUTHENTICATED" });
+
 
 export default function Index() {
    const Stack = createStackNavigator();
 
    return (
       <>
-       
          <Stack.Navigator screenOptions={{ headerShown: true }}>
             <Stack.Screen 
                options={{ ...TransitionPresets.SlideFromRightIOS }}
