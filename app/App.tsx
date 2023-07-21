@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React, { PureComponent } from 'react';
+import React from 'react';
 import { Auth0Provider } from 'react-native-auth0';
 import { NavigationContainer } from "@react-navigation/native";
 import { Provider } from "react-redux";
@@ -16,6 +16,7 @@ import config from './auth0-configuration';
 import Navigation from "./src/navigation";
 import { investigate } from 'react-native-bundle-splitter/dist/utils';
 import Instabug, { InvocationEvent } from 'instabug-reactnative';
+import { LogBox } from 'react-native';
 
 const App= (): JSX.Element => {
 
@@ -34,7 +35,9 @@ const App= (): JSX.Element => {
    // check loaded screens to reduce heavy loading on launch
    console.log('Bundle info: ', `loaded: ${investigate().loaded.length}, waiting: ${investigate().waiting.length}`);
 
-   
+   // remove yellow warning on screen
+   LogBox.ignoreAllLogs();//Ignore all log notifications
+
 return (
     <Auth0Provider domain={config.domain} clientId={config.clientId}>
       <Provider store={store}>
