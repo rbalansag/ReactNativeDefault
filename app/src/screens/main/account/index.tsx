@@ -20,7 +20,7 @@ export default function Index(props: iProps) {
                   preload().component(navigationStrings.ACCOUNT_CHANGE_PASSWORD),
                ]);
                if (status === FULFILLED) {
-                  props.navigation.navigate(navigationStrings.ACCOUNT_CHANGE_PASSWORD);
+                  props.navigation.push(navigationStrings.ACCOUNT_CHANGE_PASSWORD);
                }
             }
          }>
@@ -35,7 +35,7 @@ export default function Index(props: iProps) {
                   preload().component(navigationStrings.ACCOUNT_EDIT_LICENSE),
                ]);
                if (status === FULFILLED) {
-                  props.navigation.navigate(navigationStrings.ACCOUNT_EDIT_LICENSE);
+                  props.navigation.push(navigationStrings.ACCOUNT_EDIT_LICENSE);
                }
             }
          }>
@@ -50,7 +50,7 @@ export default function Index(props: iProps) {
                   preload().component(navigationStrings.ACCOUNT_EDIT_COMPANY),
                ]);
                if (status === FULFILLED) {
-                  props.navigation.navigate(navigationStrings.ACCOUNT_EDIT_COMPANY, {screen_for: "history"});
+                  props.navigation.push(navigationStrings.ACCOUNT_EDIT_COMPANY, {screen_for: "history"});
                }
             }
          }>

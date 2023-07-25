@@ -53,7 +53,7 @@ export default function Index(props: iProps) {
                            preload().component(navigationStrings.HISTORY_TIMELINE_VIEW),
                         ]);
                         if (status === FULFILLED) {
-                           props.navigation.navigate(navigationStrings.HISTORY_TIMELINE_VIEW, {screen_for: props.route.params?.screen_for});
+                           props.navigation.replace(navigationStrings.HISTORY_TIMELINE_VIEW, {screen_for: props.route.params?.screen_for});
                         }
                      }
                   }>
@@ -86,7 +86,7 @@ export default function Index(props: iProps) {
                            preload().component(navigationStrings.OVERVIEW),
                         ]);
                         if (status === FULFILLED) {
-                           props.navigation.navigate(navigationStrings.OVERVIEW, { screen_for: props.route.params.screen_for });
+                           props.navigation.replace(navigationStrings.OVERVIEW, { screen_for: props.route.params?.screen_for });
                         }
                      }
                   }>
@@ -101,7 +101,7 @@ export default function Index(props: iProps) {
                            preload().component(navigationStrings.EVENT_DETAILS),
                         ]);
                         if (status === FULFILLED) {
-                           props.navigation.navigate(navigationStrings.EVENT_DETAILS, { screen_for: props.route.params.screen_for });
+                           props.navigation.push(navigationStrings.EVENT_DETAILS, { screen_for: props.route.params?.screen_for });
                         }
                      }
                   }>

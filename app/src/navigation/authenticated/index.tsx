@@ -32,6 +32,11 @@ export default function Index() {
                name={navigationStrings.EXPORT}
                component={ExportScreen} 
             />
+            <Stack.Screen 
+               options={{ ...TransitionPresets.SlideFromRightIOS }}
+               name={navigationStrings.VIEW_EVENT}
+               component={ViewEventScreen} 
+            />
          </Stack.Navigator>
       </>
    );

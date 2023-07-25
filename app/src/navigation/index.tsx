@@ -13,7 +13,7 @@ export default function Index() {
 
    return (
       <>
-         <Stack.Navigator screenOptions={{ headerShown: true }}>
+         <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen 
                options={{ ...TransitionPresets.SlideFromRightIOS }}
                name={navigationStrings.AUTHENTICATION}

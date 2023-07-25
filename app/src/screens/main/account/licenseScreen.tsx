@@ -7,7 +7,7 @@ export default function Index(props) {
 
    return (
       <View style={{justifyContent: 'center', flex: 1, alignItems: 'center'}}>
-         <Text style={{fontSize: 50}}>Change password screen</Text>
+         <Text style={{fontSize: 50}}>Change license screen</Text>
       </View>
    );
 }

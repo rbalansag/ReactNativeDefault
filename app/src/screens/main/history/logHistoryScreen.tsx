@@ -20,7 +20,7 @@ export default function Index(props: iProps) {
                   preload().component(navigationStrings.HISTORY_TIMELINE_VIEW),
                ]);
                if (status === FULFILLED) {
-                  props.navigation.navigate(navigationStrings.HISTORY_TIMELINE_VIEW, {screen_for: "history"});
+                  props.navigation.push(navigationStrings.HISTORY_TIMELINE_VIEW, {screen_for: "history"});
                }
             }
          }>
