@@ -11,7 +11,7 @@ export default function Index(props: iProps) {
    return (
       <View style={{justifyContent: 'center', flex: 1, alignItems: 'center'}}>
          <Text style={{fontSize: 50}}>Starting detail screen</Text>
-         {!props.route.params?.screen_for === "previous_day" ?
+         {props.route.params?.screen_for !== "previous_day" ?
             <TouchableOpacity 
                      onPress={async () => {
                         const [{status}] = await Promise.allSettled([
@@ -21,7 +21,7 @@ export default function Index(props: iProps) {
                            preload().component(navigationStrings.STARTING_VEHICLE),
                         ]);
                         if (status === FULFILLED) {
-                           props.navigation.navigate(navigationStrings.STARTING_VEHICLE);
+                           props.navigation.push(navigationStrings.STARTING_VEHICLE);
                         }
                      }
                   }>
@@ -37,7 +37,7 @@ export default function Index(props: iProps) {
                            preload().component(navigationStrings.REVIEW_LIST),
                         ]);
                         if (status === FULFILLED) {
-                           props.navigation.navigate(navigationStrings.REVIEW_LIST, { screen_for: props?.route?.params?.screen_for });
+                           props.navigation.push(navigationStrings.REVIEW_LIST, { screen_for: props?.route?.params?.screen_for });
                         }
                      }
                   }>

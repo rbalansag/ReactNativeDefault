@@ -14,7 +14,7 @@ const AccountScreen = register({ loader: () => import("./account"), group: "ACCO
 const Tab = createBottomTabNavigator(); 
 
 const screenOptions = {
-   headerShown: false,
+   // headerShown: false,
    tabBarStyle: {zIndex: 901, elevation: 15, backgroundColor: '#F8FAFC', height: Platform.OS == "android" ? 50 : 100},
    tabBarShowLabel: false,
    tabBarHideOnKeyboard: true

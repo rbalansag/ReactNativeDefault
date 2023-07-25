@@ -23,7 +23,7 @@ export default function Index(props: iProps) {
                            preload().component(navigationStrings.EVENT_DETAILS),
                         ]);
                         if (status === FULFILLED) {
-                           props.navigation.navigate(navigationStrings.EVENT_DETAILS);
+                           props.navigation.push(navigationStrings.EVENT_DETAILS);
                         }
                      }
                   }>
@@ -38,7 +38,7 @@ export default function Index(props: iProps) {
                            preload().component(navigationStrings.REVIEW_LIST),
                         ]);
                         if (status === FULFILLED) {
-                           props.navigation.navigate(navigationStrings.REVIEW_LIST);
+                           props.navigation.replace(navigationStrings.REVIEW_LIST);
                         }
                      }
                   }>
@@ -56,7 +56,7 @@ export default function Index(props: iProps) {
                            preload().component(navigationStrings.VIEW_EVENT),
                         ]);
                         if (status === FULFILLED) {
-                           props.navigation.navigate(navigationStrings.VIEW_EVENT);
+                           props.navigation.push(navigationStrings.VIEW_EVENT);
                         }
                      }
                   }>
@@ -71,7 +71,7 @@ export default function Index(props: iProps) {
                            preload().component(navigationStrings.HISTORY_LIST_VIEW),
                         ]);
                         if (status === FULFILLED) {
-                           props.navigation.navigate(navigationStrings.HISTORY_LIST_VIEW, {screen_for: props.route.params?.screen_for});
+                           props.navigation.replace(navigationStrings.HISTORY_LIST_VIEW, {screen_for: props.route.params?.screen_for});
                         }
                      }
                   }>
@@ -86,7 +86,7 @@ export default function Index(props: iProps) {
                            preload().component(navigationStrings.EXPORT),
                         ]);
                         if (status === FULFILLED) {
-                           props.navigation.navigate(navigationStrings.EXPORT);
+                           props.navigation.push(navigationStrings.EXPORT);
                         }
                      }
                   }>
@@ -104,7 +104,7 @@ export default function Index(props: iProps) {
                            preload().component(navigationStrings.EVENT_DETAILS),
                         ]);
                         if (status === FULFILLED) {
-                           props.navigation.navigate(navigationStrings.EVENT_DETAILS);
+                           props.navigation.push(navigationStrings.EVENT_DETAILS);
                         }
                      }
                   }>
@@ -119,7 +119,7 @@ export default function Index(props: iProps) {
                            preload().component(navigationStrings.REVIEW_LIST),
                         ]);
                         if (status === FULFILLED) {
-                           props.navigation.navigate(navigationStrings.REVIEW_LIST);
+                           props.navigation.push(navigationStrings.REVIEW_LIST);
                         }
                      }
                   }>

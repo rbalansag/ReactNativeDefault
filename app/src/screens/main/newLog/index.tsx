@@ -20,7 +20,7 @@ export default function Index(props: iProps) {
                      preload().component(navigationStrings.CREATE_LOG),
                   ]);
                   if (status === FULFILLED) {
-                     props.navigation.navigate(navigationStrings.CREATE_LOG);
+                     props.navigation.push(navigationStrings.CREATE_LOG);
                   }
                }
             }>
@@ -35,7 +35,7 @@ export default function Index(props: iProps) {
                      preload().component(navigationStrings.CREATE_LOG),
                   ]);
                   if (status === FULFILLED) {
-                     props.navigation.navigate(navigationStrings.CREATE_LOG, {screen_for: "previous_day"});
+                     props.navigation.push(navigationStrings.CREATE_LOG, {screen_for: "previous_day"});
                   }
                }
             }>

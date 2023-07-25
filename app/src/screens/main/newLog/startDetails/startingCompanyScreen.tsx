@@ -20,7 +20,7 @@ export default function Index(props: iProps) {
                      preload().component(navigationStrings.OVERVIEW),
                   ]);
                   if (status === FULFILLED) {
-                     props.navigation.navigate(navigationStrings.OVERVIEW);
+                     props.navigation.push(navigationStrings.OVERVIEW);
                   }
                }
             }>
