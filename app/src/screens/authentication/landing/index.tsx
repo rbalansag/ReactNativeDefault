@@ -1,5 +1,5 @@
 // library imports
-import React from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
 import {Text, View } from 'react-native-ui-lib';
 import {TouchableOpacity} from 'react-native';
 import {preload} from 'react-native-bundle-splitter';
